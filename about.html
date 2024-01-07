@@ -27,90 +27,132 @@
             font-weight: 400;
             line-height: normal;
         }
+        
+        .button-text {
+            text-align: end;
+            color: color;
+            font-size: 24px;
+            font-family: Cabin;
+            font-weight: 700;
+            word-wrap: break-word;
+        }
+
+        .clickable-image {
+            display: block;
+        }
+
+        .clickable-image:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
     <div style="display: flex; justify-content: center;">
-        <div
-            style="background-color: #354751; display: flex; gap: 150px; margin: 142px 0 154px 0; padding: 105px 86px 50px 70px;">
-            <div style="flex: 1;">
-                <img src="assets/index/ema_profile.png" />
-                <div class="headline" style="margin-top: 37px;">hi, my name is Ema!</div>
-                <div class="text" style="font-weight: 500px; width: 450px; margin-top: 37px;">
-                    I am currently pursuing a Master's degree in Industrial Design. My work focuses on socially
-                    conscious and critical design within urban contexts. My expertise extends to exhibition design,
-                    where I've gained valuable experience. I actively engage in workshops that gave me my teamwork
-                    skills. I enjoy creating new experiences. I like observing people, their actions, and their thought
-                    processes. I draw inspiration from others as well as from within myself and the things I encounter
-                    daily. I aim to use design as a catalyst for change and essential communication. I understand that
-                    industrial design is the tool through which I can communicate most sincerely and effectively, and I
-                    intend to keep using it. I don't want to strictly confine my field of action because I know that for
-                    any potential that inspires me, I have the dedication to extract the most from it.
+        <div style="display: block;">
+            <header style="height: 50px; display: flex; flex-direction: row-reverse; margin-top: 79px;">
+                <div class="button-text" style="width: 126px; height: 50px; margin-right: 30px; margin-top: 5px;">
+                    <a style="text-decoration: none; color: #000;" href="index.html">work</a>
                 </div>
-                <div class="text" style="margin-top: 35px;">
-                    Contact
-                    <div style="margin-top: 15px;"><a style="text-decoration: none;"
-                            href="mailto://ema.cimbur8@gmail.com">ema.cimbur8@gmail.com</a> </div>
-                    <div style="margin-top: 15px;"><a>CV</a></div>
+                <div style="width: 126px; height: 50px; margin-top: 5px;" class="button-text">
+                    <a style="text-decoration: none; color: #000;" href="about.html">about</a>
                 </div>
-                <div style="display: flex; gap: 37px; margin: 35px 0 0 -25px;">
-                    <img src="assets/index/linked_in.png" />
-                    <img src="assets/index/gmail.png" />
-                </div>
-            </div>
-            <div style="flex: 1; width: 366px; display: block;" class="text">
-                <div style="font-weight: 700; margin-bottom: 15px;">Education</div>
-                <div style="display: flex; width: 366px; gap: 15px;">
-                    <div>
-                       <p>2015. - 2019. </p>
-                       <p>2019. - 2022. </p>
-                       <p>2022. - present</p>
+                <a class="clickable-image" href="https://www.linkedin.com/in/ema-%C4%8D-b43305289/">
+                    <img style="width: 39px; height: 39px;" src="assets/index/linked_in.png" />
+                </a>
+            </header>
+            <main
+                style="background-color: #354751; display: flex; gap: 150px; margin: 64px 0 154px 0; padding: 105px 86px 50px 70px;">
+                <div style="flex: 1;">
+                    <img src="assets/index/ema_profile.png" />
+                    <div class="headline" style="margin-top: 37px;">hi, my name is Ema!</div>
+                    <div class="text" style="font-weight: 500px; width: 450px; margin-top: 37px;">
+                        I am currently pursuing a Master's degree in Industrial Design. My work focuses on socially
+                        conscious and critical design within urban contexts. My expertise extends to exhibition design,
+                        where I've gained valuable experience. I actively engage in workshops that gave me my teamwork
+                        skills. I enjoy creating new experiences. I like observing people, their actions, and their
+                        thought
+                        processes. I draw inspiration from others as well as from within myself and the things I
+                        encounter
+                        daily. I aim to use design as a catalyst for change and essential communication. I understand
+                        that
+                        industrial design is the tool through which I can communicate most sincerely and effectively,
+                        and I
+                        intend to keep using it. I don't want to strictly confine my field of action because I know that
+                        for
+                        any potential that inspires me, I have the dedication to extract the most from it.
                     </div>
-                    <div>
-                        <p>General education gymnasium</p>
-                        <p>School of design Bachelor’s degree</p>
-                        <p>School of design Master's degree </p>
+                    <div class="text" style="margin-top: 35px;">
+                        Contact
+                        <div style="margin-top: 15px;"><a style="text-decoration: none; color: white;"
+                                href="mailto://ema.cimbur8@gmail.com">ema.cimbur8@gmail.com</a> </div>
+                        <div style="margin-top: 15px;"><a style="text-decoration: none; color: white" href="assets/index/Ema Čimbur.pdf">CV</a> 
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 37px; margin: 35px 0 0 -25px;">
+                        <a class="clickable-image" href="https://www.linkedin.com/in/ema-%C4%8D-b43305289/">
+                            <img src="assets/index/linked_in.png" />
+                        </a>
+                        <a class="clickable-image" href="mailto://ema.cimbur8@gmail.com">
+                            <img src="assets/index/gmail.png" />
+                        </a>
                     </div>
                 </div>
-                <div style="font-weight: 700; width: 366px; margin: 30px 0 30px 0;">Experience</div>
-                <div class="text">
-                    <p>Exhibition designer on Zagreb design week 2022.</p>
-                    <p>Exhibition designer on Zagreb design week 2023.</p> 
-                    <p>Student teaching assistant 2022.-present</p>
+                <div style="flex: 1; width: 366px; display: block;" class="text">
+                    <div style="font-weight: 700; margin-bottom: 15px;">Education</div>
+                    <div style="display: flex; width: 366px; gap: 15px;">
+                        <div>
+                            <p>2015. - 2019. </p>
+                            <p>2019. - 2022. </p>
+                            <p>2022. - present</p>
+                        </div>
+                        <div>
+                            <p>General education gymnasium</p>
+                            <p>School of design Bachelor’s degree</p>
+                            <p>School of design Master's degree </p>
+                        </div>
+                    </div>
+                    <div style="font-weight: 700; width: 366px; margin: 30px 0 30px 0;">Experience</div>
+                    <div class="text">
+                        <p>Exhibition designer on Zagreb design week 2022.</p>
+                        <p>Exhibition designer on Zagreb design week 2023.</p>
+                        <p>Student teaching assistant 2022.-present</p>
+                    </div>
+                    <div style="font-weight: 700; width: 366px; margin: 30px 0 30px 0;">Awards</div>
+                    <div class="text">
+                        <p>
+                            First award at biennale of croatian design 2023. for a student work in industrial design
+                            Annual
+                            award of the school of design 2023.
+                        </p>
+                        <p>Annual award of the school of design 2023.</p>
+                        <p>Finalist at Zagreb design week 2022.</p>
+                        <p>Finalist at Zagreb design week 2023.</p>
+                    </div>
+                    <div style="font-weight: 700; width: 366px; margin: 30px 0 30px 0;">Workshops</div>
+                    <div class="text">
+                        <p>Otherness toolkit 2020.</p>
+                        <p>Osjeti igru 2022.</p>
+                        <p>Community resilience: building commom futures 2022.</p>
+                        <p>Rave of the ritualesque 2023.</p>
+                    </div>
+                    <div style="font-weight: 700; width: 366px; margin: 30px 0 30px 0;">Softwares</div>
+                    <div class="text">
+                        <p>Adobe </p>
+                        <p>Photoshop </p>
+                        <p>Adobe Indesign </p>
+                        <p>Adobe Illustrator </p>
+                        <p>Adobe After Effects </p>
+                        <p>Fusion 360 </p>
+                        <p>Sketchup </p>
+                        <p>Keyshot </p>
+                        <p>AutoCad</p>
+                        <p>Da Vinci resolve</p>
+                        <p>Figma </p>
+                    </div>
                 </div>
-                <div style="font-weight: 700; width: 366px; margin: 30px 0 30px 0;">Awards</div>
-                <div class="text">
-                    <p>
-                        First award at biennale of croatian design 2023. for a student work in industrial design Annual
-                        award of the school of design 2023.
-                    </p>
-                    <p>Annual award of the school of design 2023.</p> 
-                    <p>Finalist at Zagreb design week 2022.</p>
-                    <p>Finalist at Zagreb design week 2023.</p>
-                </div>
-                <div style="font-weight: 700; width: 366px; margin: 30px 0 30px 0;">Workshops</div>
-                <div class="text">
-                    <p>Otherness toolkit 2020.</p> 
-                    <p>Osjeti igru 2022.</p> 
-                    <p>Community resilience: building commom futures 2022.</p>  
-                    <p>Rave of the ritualesque 2023.</p>
-                </div>
-                <div style="font-weight: 700; width: 366px; margin: 30px 0 30px 0;">Softwares</div>
-                <div class="text">
-                    <p>Adobe  </p> 
-                    <p>Photoshop  </p>
-                    <p>Adobe Indesign  </p> 
-                    <p>Adobe Illustrator  </p>
-                    <p>Adobe After Effects  </p>
-                    <p>Fusion 360  </p>
-                    <p>Sketchup  </p>
-                    <p>Keyshot  </p> 
-                    <p>AutoCad</p>  
-                    <p>Da Vinci resolve</p>  
-                    <p>Figma </p>
-                </div>
-            </div>
+            </main>
         </div>
     </div>
 </body>
