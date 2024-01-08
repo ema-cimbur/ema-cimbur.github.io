@@ -60,11 +60,28 @@
             cursor: pointer;
         }
 
+        #img-container {
+            display: flex;
+            width: 1070px;
+            margin-top: 50px;
+        }
+
+        .ema {}
+
+        @media only screen and (max-width: 600px) {
+            #img-container {
+                display: block;
+                width: 500px;
+            }
+            .ema {
+                margin-left: 25vw;
+            }
+        }
     </style>
 </head>
 
 <body style="background: #354751; width: 100%; margin: 0;">
-    <main
+    <main id="desktop-content"
         style="display: flex; justify-items: center; align-items: center; justify-content: center; align-content: center; margin-right: 50px;">
         <div style="display: block;">
             <div style="height: 50px; display: flex; flex-direction: row-reverse; margin-top: 87px;">
@@ -78,13 +95,13 @@
                     <img style="width: 39px; height: 39px;" src="assets/index/linked_in.png" />
                 </a>
             </div>
-            <div>
+            <div class="ema">
                 <div style="color: white; font-size: 64px; font-family: Cabin; font-weight: 400; word-wrap: break-word">
                     Ema</div>
                 <div style="color: white; font-size: 64px; font-family: Cabin; font-weight: 400; word-wrap: break-word">
                     Čimbur</div>
             </div>
-            <div id="img-container" style="display: flex; width: 1070px; margin-top: 50px;">
+            <div id="img-container">
                 <div id="left" style="flex: 1;">
                     <div class="container"
                         style="background-image: url('assets/index/svemirska_terasa.jpg'); width: 518px; height: 461px;">
@@ -149,7 +166,8 @@
             <footer>
                 <div
                     style="width: 501px; color: white; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word; margin: 43px 0px 92px 0px">
-                    <a style="text-decoration: none; color: white" href="mailto://ema.cimbur8@gmail.com">ema.cimbur8@gmail.com</a> 
+                    <a style="text-decoration: none; color: white"
+                        href="mailto://ema.cimbur8@gmail.com">ema.cimbur8@gmail.com</a>
                 </div>
             </footer>
         </div>

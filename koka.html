@@ -82,6 +82,14 @@
             z-index: 1;
 
         }
+
+        .koka-container {
+            width: 175px;
+            height: 250px;
+            overflow: hidden;
+            background-size: 150% 150%;
+            background-position: center center;
+        }
     </style>
 </head>
 
@@ -113,8 +121,21 @@
                         mechanism can be used as a children’s toy.
                     </div>
 
-                    <img style="margin-left: 30px;" src="assets/koka/koka_drawing_1.png" />
+                    <div style="display: flex; gap: 15px; margin-left: 30px;">
+                        <!-- <img src="assets/koka/koka_2_1.png" width="100px" height="150px"
+                            style="object-fit: cover; transform: scale(1.5); transform-origin: center center;" />
+                        <img src="assets/koka/koka_2_2.jpg" width="160px" height="250px"
+                            style="object-fit: cover; transform: scale(1.5); transform-origin: center center;" />
+                        <img src="assets/koka/koka_2_3.jpg" width="160px" height="250px"
+                            style="object-fit: cover; transform: scale(1.5); transform-origin: center center;" /> -->
+                        <div class="koka-container" style="background-image: url('assets/koka/koka_2_1.png');"></div>
+                        <div class="koka-container" style="background-image: url('assets/koka/koka_2_2.jpg'); background-size: 120% 120%;"></div>
+                        <div class="koka-container" style="background-image: url('assets/koka/koka_2_3.jpg'); background-size: 120% 120%;"></div>
+                    </div>
 
+                    <div style="display: flex; justify-content: center; margin: 75px 0 0 30px;">
+                        <img src="assets/koka/koka_drawing_1.png" />
+                    </div>
                     <div
                         style="padding-left: 30px; width: 466px; height: 150px; color: black; font-size: 12px; font-family: Inter; font-weight: 500; word-wrap: break-word">
                         Koka can be used as a kid’s toy. It is simple and fun to play with. The whole model is hand made
@@ -187,9 +208,9 @@
 
         var clickableDiv = document.getElementById('clickable-div');
         clickableDiv.style.cursor = "pointer";
-        clickableDiv.addEventListener('click', function() {
-            var videoPrompt  = document.getElementById("video-prompt");
-            if(video.paused) {
+        clickableDiv.addEventListener('click', function () {
+            var videoPrompt = document.getElementById("video-prompt");
+            if (video.paused) {
                 video.play();
                 videoPrompt.innerText = "pause";
             } else {
