@@ -66,15 +66,39 @@
             margin-top: 50px;
         }
 
-        .ema {}
+        #img-container-mobile {
+            display: none;
+        }
+
+        main {
+            margin-right: 50px;
+        }
+
 
         @media only screen and (max-width: 600px) {
-            #img-container {
-                display: block;
-                width: 500px;
-            }
             .ema {
-                margin-left: 25vw;
+                margin: 0 0 2vh 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #img-container {
+                display: none;
+            }
+
+            #img-container-mobile {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            main {
+                margin-right: 0;
+            }
+
+            footer {
+                display: none;
             }
         }
     </style>
@@ -82,7 +106,7 @@
 
 <body style="background: #354751; width: 100%; margin: 0;">
     <main id="desktop-content"
-        style="display: flex; justify-items: center; align-items: center; justify-content: center; align-content: center; margin-right: 50px;">
+        style="display: flex; justify-items: center; align-items: center; justify-content: center; align-content: center;">
         <div style="display: block;">
             <div style="height: 50px; display: flex; flex-direction: row-reverse; margin-top: 87px;">
                 <div class="button-text" style="width: 126px; height: 50px; margin-right: 30px; margin-top: 5px;">
@@ -123,7 +147,7 @@
                         style="background-image: url('assets/index/KOKA.png'); width: 523px; height: 295px;">
                         <a href="koka.html" class="hidden-div"
                             style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text" style="height: 47px; margin: 0 0 15px 10px">Koka / mechanical
+                            <span class="card-hover-text" style="height: 47px; margin: 0 0 0px 10px">Koka / mechanical
                                 automaton</span>
                         </a>
                     </div>
@@ -133,7 +157,7 @@
                         style="background-image: url('assets/index/neverlost.png'); width: 511px; height: 285px;">
                         <a href="neverlost.html" class="hidden-div"
                             style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text" style="height: 47px; margin: 0 0 15px 10px">NeverLost /
+                            <span class="card-hover-text" style="height: 47px; margin: 0 0 0px 10px">NeverLost /
                                 speculative technology of the future</span>
                         </a>
                     </div>
@@ -141,7 +165,7 @@
                         style="background-image: url('assets/index/office_island.jpg'); width: 514px; height: 267px;">
                         <a href="office-island.html" class="hidden-div"
                             style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text" style="height: 47px; margin: 0 0 15px 10px">Office island /
+                            <span class="card-hover-text" style="height: 47px; margin: 0 0 0px 10px">Office island /
                                 furniture for the workspace</span>
                         </a>
                     </div>
@@ -149,7 +173,7 @@
                         style="background-image: url('assets/index/spirits_of_zadar.png'); width: 520px; height: 296px;">
                         <a href="spirits-of-zadar.html" class="hidden-div"
                             style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text" style="height: 47px; margin: 0 0 15px 10px">Spirits of Zadar /
+                            <span class="card-hover-text" style="height: 47px; margin: 0 0 0px 10px">Spirits of Zadar /
                                 exploring the loss of “towness”</span>
                         </a>
                     </div>
@@ -157,9 +181,96 @@
                         style="background-image: url('assets/index/pook.jpg'); width: 519px; height: 308px;">
                         <a href="pook.html" class="hidden-div"
                             style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text" style="height: 47px; margin: 0 0 15px 10px">Pook / hot air
+                            <span class="card-hover-text" style="height: 47px; margin: 0 0 0px 10px">Pook / hot air
                                 popcorn maker</span>
                         </a>
+                    </div>
+                </div>
+            </div>
+            <div id="img-container-mobile">
+                <div
+                    style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+                    <div class="container"
+                        style="background-image: url('assets/index/svemirska_terasa.jpg'); width: 500px; height: 461px;">
+                        <a href="space-terrace.html" class="hidden-div"
+                            style="display: flex; flex-direction: column; justify-content: flex-end;">
+                            <span class="card-hover-text" style="height: 75px; width: 500px; text-align: center;">Space
+                                terrace
+                                /
+                                modular system of urban equipment</span>
+                        </a>
+                    </div>
+
+
+                    <div class="container"
+                        style="background-image: url('assets/index/andy_warhol_loftjpg.jpg'); width: 500px; height: 310px;">
+                        <a href="andy-warhol-loft.html" class="hidden-div"
+                            style="display: flex; flex-direction: column; justify-content: flex-end;">
+                            <span class="card-hover-text" style="height: 75px; width: 500px; text-align: center;">Andy
+                                Warhol
+                                loft / <br>
+                                designing interior for a famous artist</span>
+                        </a>
+                    </div>
+
+
+                    <div class="container"
+                        style="background-image: url('assets/index/KOKA.png'); width: 500px; height: 295px;">
+                        <a href="koka.html" class="hidden-div"
+                            style="display: flex; flex-direction: column; justify-content: flex-end;">
+                            <span class="card-hover-text" style="height: 50px; width: 500px; text-align: center;">Koka /
+                                mechanical
+                                automaton</span>
+                        </a>
+                    </div>
+
+
+                    <div class="container"
+                        style="background-image: url('assets/index/neverlost.png'); width: 500px; height: 285px;">
+                        <a href="neverlost.html" class="hidden-div"
+                            style="display: flex; flex-direction: column; justify-content: flex-end;">
+                            <span class="card-hover-text"
+                                style="height: 75px; width: 500px; text-align: center;">NeverLost / <br>
+                                speculative technology of the future</span>
+                        </a>
+                    </div>
+
+                    <div class="container"
+                        style="background-image: url('assets/index/office_island.jpg'); width: 500px; height: 267px;">
+                        <a href="office-island.html" class="hidden-div"
+                            style="display: flex; flex-direction: column; justify-content: flex-end;">
+                            <span class="card-hover-text" style="height: 75px; width: 500px; text-align: center;">Office
+                                island / <br>
+                                furniture for the workspace</span>
+                        </a>
+                    </div>
+
+                    <div class="container"
+                        style="background-image: url('assets/index/spirits_of_zadar.png'); width: 500px; height: 296px;">
+                        <a href="spirits-of-zadar.html" class="hidden-div"
+                            style="display: flex; flex-direction: column; justify-content: flex-end;">
+                            <span class="card-hover-text" style="height: 75px; width: px; text-align: center;">Spirits
+                                of
+                                Zadar / <br>
+                                exploring the loss of “towness”</span>
+                        </a>
+                    </div>
+
+                    <div class="container"
+                        style="background-image: url('assets/index/pook.jpg'); width: 500px; height: 308px;">
+                        <a href="pook.html" class="hidden-div"
+                            style="display: flex; flex-direction: column; justify-content: flex-end;">
+                            <span class="card-hover-text" style="height: 50px; width: 500px; text-align: center;">Pook /
+                                hot air
+                                popcorn maker</span>
+                        </a>
+                    </div>
+
+                    <div
+                        style="color: white; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word; margin: 43px 0px 92px 0px">
+                        <a style="text-decoration: none; color: white"
+                            href="mailto://ema.cimbur8@gmail.com">ema.cimbur8@gmail.com</a>
                     </div>
                 </div>
             </div>
