@@ -13,6 +13,8 @@
             width: 200px;
             height: 200px;
             margin-bottom: 31px;
+            background-size: cover;
+            background-position: center;
         }
 
         .hidden-div {
@@ -75,6 +77,18 @@
         }
 
 
+        #mobile-content {
+            display: none;
+        }
+
+        #desktop-content {
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+        }
+
         @media only screen and (max-width: 600px) {
             .ema {
                 margin: 0 0 2vh 0;
@@ -100,13 +114,22 @@
             footer {
                 display: none;
             }
+
+            #desktop-content {
+                display: none;
+            }
+
+            #mobile-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
 </head>
 
 <body style="background: #354751; width: 100%; margin: 0;">
-    <main id="desktop-content"
-        style="display: flex; justify-items: center; align-items: center; justify-content: center; align-content: center;">
+    <main id="desktop-content">
         <div style="display: block;">
             <div style="height: 50px; display: flex; flex-direction: row-reverse; margin-top: 87px;">
                 <div class="button-text" style="width: 126px; height: 50px; margin-right: 30px; margin-top: 5px;">
@@ -186,94 +209,9 @@
                         </a>
                     </div>
                 </div>
+                
             </div>
-            <div id="img-container-mobile">
-                <div
-                    style="width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center;">
 
-                    <div class="container"
-                        style="background-image: url('assets/index/svemirska_terasa.jpg'); width: 500px; height: 461px;">
-                        <a href="space-terrace.html" class="hidden-div"
-                            style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text" style="height: 75px; width: 500px; text-align: center;">Space
-                                terrace
-                                /
-                                modular system of urban equipment</span>
-                        </a>
-                    </div>
-
-
-                    <div class="container"
-                        style="background-image: url('assets/index/andy_warhol_loftjpg.jpg'); width: 500px; height: 310px;">
-                        <a href="andy-warhol-loft.html" class="hidden-div"
-                            style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text" style="height: 75px; width: 500px; text-align: center;">Andy
-                                Warhol
-                                loft / <br>
-                                designing interior for a famous artist</span>
-                        </a>
-                    </div>
-
-
-                    <div class="container"
-                        style="background-image: url('assets/index/KOKA.png'); width: 500px; height: 295px;">
-                        <a href="koka.html" class="hidden-div"
-                            style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text" style="height: 50px; width: 500px; text-align: center;">Koka /
-                                mechanical
-                                automaton</span>
-                        </a>
-                    </div>
-
-
-                    <div class="container"
-                        style="background-image: url('assets/index/neverlost.png'); width: 500px; height: 285px;">
-                        <a href="neverlost.html" class="hidden-div"
-                            style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text"
-                                style="height: 75px; width: 500px; text-align: center;">NeverLost / <br>
-                                speculative technology of the future</span>
-                        </a>
-                    </div>
-
-                    <div class="container"
-                        style="background-image: url('assets/index/office_island.jpg'); width: 500px; height: 267px;">
-                        <a href="office-island.html" class="hidden-div"
-                            style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text" style="height: 75px; width: 500px; text-align: center;">Office
-                                island / <br>
-                                furniture for the workspace</span>
-                        </a>
-                    </div>
-
-                    <div class="container"
-                        style="background-image: url('assets/index/spirits_of_zadar.png'); width: 500px; height: 296px;">
-                        <a href="spirits-of-zadar.html" class="hidden-div"
-                            style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text" style="height: 75px; width: px; text-align: center;">Spirits
-                                of
-                                Zadar / <br>
-                                exploring the loss of “towness”</span>
-                        </a>
-                    </div>
-
-                    <div class="container"
-                        style="background-image: url('assets/index/pook.jpg'); width: 500px; height: 308px;">
-                        <a href="pook.html" class="hidden-div"
-                            style="display: flex; flex-direction: column; justify-content: flex-end;">
-                            <span class="card-hover-text" style="height: 50px; width: 500px; text-align: center;">Pook /
-                                hot air
-                                popcorn maker</span>
-                        </a>
-                    </div>
-
-                    <div
-                        style="color: white; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word; margin: 43px 0px 92px 0px">
-                        <a style="text-decoration: none; color: white"
-                            href="mailto://ema.cimbur8@gmail.com">ema.cimbur8@gmail.com</a>
-                    </div>
-                </div>
-            </div>
             <footer>
                 <div
                     style="width: 501px; color: white; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word; margin: 43px 0px 92px 0px">
@@ -281,8 +219,109 @@
                         href="mailto://ema.cimbur8@gmail.com">ema.cimbur8@gmail.com</a>
                 </div>
             </footer>
+    </main>
+
+    <main id="mobile-content" style="padding: 0 30px 30px 30px; width: 100%;">
+        <header style="height: 50px; display: flex; justify-content: space-between; margin-top: 27px; width: 100%;">
+            <a class="clickable-image" href="https://www.linkedin.com/in/ema-%C4%8D-b43305289/">
+                <img style="width: 39px; height: 39px;" src="assets/index/linked_in.png" />
+            </a>
+            <div class="button-text" style="width: 126px; height: 50px; margin-top: 5px;">
+                <a style="text-decoration: none; color: #FFF;" href="index.html">work</a>
+            </div>
+            <div style="width: 126px; height: 50px; margin-top: 5px;" class="button-text">
+                <a style="text-decoration: none; color: #FFF;" href="about.html">about</a>
+            </div>
+        </header>
+
+        <div style="width: 100%; margin-top: 34px;">
+            <div
+                style="color: #FFF; font-family: Cabin; font-size: 36px; font-style: normal; font-weight: 400; line-height: normal;; width: 100%;">
+                Ema</div>
+            <div
+                style="color: #FFF; font-family: Cabin; font-size: 36px; font-style: normal; font-weight: 400; line-height: normal;; width: 100%;">
+                Čimbur</div>
+        </div>
+
+
+        <div class="container"
+            style="background-image: url('assets/mobile/index/space_terrace.png'); margin-top: 50px; width: 100%; height: 380px;">
+            <a href="space-terrace.html" class="hidden-div"
+                style="display: flex; flex-direction: column; justify-content: flex-end;">
+                <span class="card-hover-text" style="height: 75px; width: 100%; text-align: center;">Space
+                    terrace
+                    /
+                    modular system of urban equipment</span>
+            </a>
+        </div>
+
+        <div class="container"
+            style="background-image: url('assets/mobile/index/neverlost.png'); width: 100%;">
+            <a href="neverlost.html" class="hidden-div"
+                style="display: flex; flex-direction: column; justify-content: flex-end;">
+                <span class="card-hover-text" style="height: 75px; width: 100%; text-align: center;">NeverLost
+                    / <br>
+                    speculative technology of the future</span>
+            </a>
+        </div>
+
+        <div class="container"
+        style="background-image: url('assets/mobile/index/office_island.png'); width: 100%; height: 200px;">
+        <a href="office-island.html" class="hidden-div"
+            style="display: flex; flex-direction: column; justify-content: flex-end;">
+            <span class="card-hover-text" style="height: 75px; width: 100%; text-align: center;">Office
+                island / <br>
+                furniture for the workspace</span>
+        </a>
+        </div>
+
+        <div class="container"
+            style="background-image: url('assets/mobile/index/andy_warhol_loft.png'); width: 100%; height: 215px;">
+            <a href="andy-warhol-loft.html" class="hidden-div"
+                style="display: flex; flex-direction: column; justify-content: flex-end;">
+                <span class="card-hover-text" style="height: 75px; width: 100%; text-align: center;">Andy
+                    Warhol
+                    loft / <br>
+                    designing interior for a famous artist</span>
+            </a>
+        </div>
+
+        <div class="container"
+            style="background-image: url('assets/mobile/index/spirits_of_zadar.png'); width: 100%; height: 200px;">
+            <a href="spirits-of-zadar.html" class="hidden-div"
+                style="display: flex; flex-direction: column; justify-content: flex-end;">
+                <span class="card-hover-text" style="height: 75px; width: 100%; text-align: center;">Spirits
+                    of
+                    Zadar / <br>
+                    exploring the loss of “towness”</span>
+            </a>
+        </div>
+     
+        <div class="container" style="background-image: url('assets/mobile/index/koka.png'); width: 100%; height: 200px;">
+            <a href="koka.html" class="hidden-div"
+                style="display: flex; flex-direction: column; justify-content: flex-end;">
+                <span class="card-hover-text" style="height: 50px; width: 100%; text-align: center;">Koka /
+                    mechanical
+                    automaton</span>
+            </a>
+        </div>   
+
+        <div class="container" style="background-image: url('assets/mobile/index/pook.png'); width: 100%; height: 215px;">
+            <a href="pook.html" class="hidden-div"
+                style="display: flex; flex-direction: column; justify-content: flex-end;">
+                <span class="card-hover-text" style="height: 50px; width: 100%; text-align: center;">Pook /
+                    hot air
+                    popcorn maker</span>
+            </a>
+        </div>
+
+        <div
+            style="color: white; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word;">
+            <a style="text-decoration: none; color: white"
+                href="mailto://ema.cimbur8@gmail.com">ema.cimbur8@gmail.com</a>
         </div>
     </main>
+
 </body>
 
 </html>
