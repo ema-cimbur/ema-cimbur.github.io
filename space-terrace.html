@@ -48,13 +48,46 @@
             font-weight: 400;
             line-height: normal;
         }
+
+        #desktop-content {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #mobile-content {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #desktop-content {
+                display: none;
+            }
+
+            #mobile-content {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 0;
+                padding: 11px 30px 30px 30px;
+            }
+
+            .text {
+                color: #000;
+                font-family: Roboto;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
     </style>
 </head>
 
 <body style="margin: 0; width: 100%;">
     <header style="height: 40px; width: 100%; background-color: #000AFF;">
     </header>
-    <main style="display: flex; justify-content: center; align-content: center;">
+    <main id="desktop-content">
         <div style="display: block;">
             <div style="display: flex; width: 60%;">
                 <div id="left" style="flex: 1; display: block;">
@@ -97,8 +130,9 @@
                     </div>
                 </div>
                 <div id="right" style="flex: 1; display: flex; margin: 215px 0 0 43px;">
-                    <img style="width: 105px; height: 135px; margin: 18px -53px; z-index: 1;" src="assets/space-terrace/zgdw_award_finalist.png" />
-                    <img width="584px" height="583px" src="assets/space-terrace/space_terrace_1.png" /> 
+                    <img style="width: 105px; height: 135px; margin: 18px -53px; z-index: 1;"
+                        src="assets/space-terrace/zgdw_award_finalist.png" />
+                    <img width="584px" height="583px" src="assets/space-terrace/space_terrace_1.png" />
                 </div>
             </div>
             <div style="display: flex; margin-top: 75px;">
@@ -167,11 +201,18 @@
             </div>
             <div style="display: flex; align-items: end;">
                 <img style="margin-right: 110px;" src="assets/space-terrace/space_terrace_15.png" />
-                <img style="margin-right: 21px;" width="171px" height="324px" src="assets/space-terrace/space_terrace_16.png" />
-                <img style="margin-right: 35px;" width="213px" height="256px" src="assets/space-terrace/space_terrace_17.png" />
+                <img style="margin-right: 21px;" width="171px" height="324px"
+                    src="assets/space-terrace/space_terrace_16.png" />
+                <img style="margin-right: 35px;" width="213px" height="256px"
+                    src="assets/space-terrace/space_terrace_17.png" />
                 <div style="display: block;">
-                    <div style="width: 210px; height: 116px; color: #A09B9F; font-size: 15px; font-family: Roboto; font-weight: 700; word-wrap: break-word">First award at biennale of croatian design for student work at industrial design</div>
-                    <div style="width: 210px; height: 116px; color: #A09B9F; font-size: 15px; font-family: Roboto; font-weight: 700; word-wrap: break-word">The work was exhibited at Zagreb design week 2022. amongst finalists in the category of industrial design</div>
+                    <div
+                        style="width: 210px; height: 116px; color: #A09B9F; font-size: 15px; font-family: Roboto; font-weight: 700; word-wrap: break-word">
+                        First award at biennale of croatian design for student work at industrial design</div>
+                    <div
+                        style="width: 210px; height: 116px; color: #A09B9F; font-size: 15px; font-family: Roboto; font-weight: 700; word-wrap: break-word">
+                        The work was exhibited at Zagreb design week 2022. amongst finalists in the category of
+                        industrial design</div>
                 </div>
             </div>
             <footer>
@@ -182,6 +223,142 @@
             </footer>
         </div>
     </main>
+
+    <main id="mobile-content">
+        <div
+            style="color: #000; font-family: Ebson; font-size: 40px; font-style: normal; font-weight: 400; line-height: normal;">
+            <div>Space terrace -</div>
+            <div>a modular system of urban equipment</div>
+        </div>
+        <div class="subtitle" style="height: 92px; width: 100%; margin-top: 27px;">
+            <div style="margin-bottom: 15px;">Mentors: Zlatko Kapetanović, Nina Bačun</div>
+            <div style="margin-bottom: 15px;">Industrial design 6</div>
+            2022.
+        </div>
+        <div class="text" style="width: 100%; margin-top: 9px;">
+            The system of urban equipment is designed for a specific location located behind the famous
+            modernist
+            Zagreb buildings Rockets, which is popularly called the Space Terrace. Through an extensive
+            analysis of the area's
+            dilapidated state and the diverse ways in which it's utilized by people, the users' needs were
+            identified.
+            Leveraging the existing concrete modules alongside metal structures, a versatile modular element
+            system was crafted.
+            This system empowers the Rockets' residents to fashion their personalized spaces for an array of
+            activities,
+            fostering socialization and more.
+        </div>
+        <div style="display: flex; margin-top: 15px;">
+            <img src="assets/space-terrace/zgdw_award_finalist.png" width="58px" height="75px" />
+            <img src="assets/space-terrace/space_terrace_1.png" width="325px" height="323px" />
+        </div>
+        <div style="margin-top: 24px;">
+            <img style="margin-top: 50px;" src="assets/space-terrace/space_terrace_2.png" width="207px"
+                height="136px" />
+            <div style="display: flex; gap: 8px; margin-top: 8px;">
+                <img src="assets/space-terrace/space_terrace_3.png" width="207px" height="121px" />
+                <div class="text" style="height: 118px; font-size: 10px;">
+                    Rakete (the Rockets) also known as Richterovi Neboderi (the Richter
+                    Skyscrapers)<br />Architects: Berislav Šerbetić,
+                    LjuboIveta, Vjenceslav Richter & OlgaKorenik (Centar 51 Design Group)<br />
+                    Completed: 1968 Formerly Yugoslavia
+                </div>
+            </div>
+        </div>
+        <div
+            style="margin: 30px 0 25px 5px; color: black; font-size: 20px; font-family: Cabin; font-weight: 400; word-wrap: break-word; width: 100%;">
+            current state of the terrace
+        </div>
+        <div style="display: flex; gap: 11px; width: 100%;">
+            <img src="assets/space-terrace/space_terrace_4.png" width="135px" height="182px" />
+            <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                <img src="assets/space-terrace/space_terrace_5.png" width="171px" height="86px" />
+                <img src="assets/space-terrace/space_terrace_6.png" width="122px" height="83px" />
+            </div>
+        </div>
+        <div class="text" style="width: 100%; margin-top: 24px;">
+            The activities and behaviors of the people on the terrace were observed and documented
+            over a span of a few months.
+            People were contributing personal elements such as chairs and improvised tables to
+            fashion their own makeshift
+            "living rooms." They also repurposed existing concrete modules, rearranging them to
+            create inviting spaces for
+            socializing.Throughout the investigative process, the requirements of the
+            community were thoroughly
+            documented. These insights served as the foundation for designing a system that not only
+            accommodated current
+            communal behaviors but also facilitated the effortless construction of personalized
+            spaces for individuals.
+        </div>
+        <div style="margin-top: 15px; width: 100%; display: flex; gap: 13px;">
+            <img src="assets/space-terrace/space_terrace_7.png" width="155px" height="111px" />
+            <img src="assets/space-terrace/space_terrace_8.png" widht="155px" height="111px" />
+        </div>
+        <div
+            style="margin: 30px 0 25px 5px; color: black; font-size: 20px; font-family: Cabin; font-weight: 400; word-wrap: break-word; width: 100%;">
+            designed state of the terrace
+        </div>
+        <img src="assets/space-terrace/space_terrace_9.png" width="100%" height="75px">
+        <div style="display: flex; width: 100%;">
+            <div style="display: block;">
+                <img src="assets/space-terrace/space_terrace_11.png" width="189px" height="150px">
+                <img src="assets/space-terrace/space_terrace_10.png" width="189px" height="94px"
+                    style="margin-top: 6px;">
+            </div>
+            <div style="display: flex; flex-direction: column-reverse;">
+                <div class="text" style="width: 100%;">
+                    The versatile metal framework, available in four distinct shapes, accommodates various materials
+                    and enables diverse
+                    combinations. It empowers individuals to create their own interventions and configurations,
+                    leveraging the unique
+                    properties of each material.
+                </div>
+            </div>
+        </div>
+        <div
+            style="margin: 30px 0 25px 5px; color: black; font-size: 20px; font-family: Cabin; font-weight: 400; word-wrap: break-word; width: 100%;">
+            different materials
+        </div>
+        <div style="display: flex; width: 100%;">
+            <img src="assets/space-terrace/space_terrace_12.png" width="210px" height="560px" />
+            <div style="display: block;">
+                <div class="materials" style="margin: 50px 0px 0px 5px">perforated metal</div>
+                <div class="materials" style="margin: 50px 0px 0px 5px">metal</div>
+                <div class="materials" style="margin: 50px 0px 0px 5px">knit</div>
+                <div class="materials" style="margin: 50px 0px 0px 5px">wood</div>
+            </div>
+        </div>
+        <div
+            style="margin: 30px 0 25px 5px; color: black; font-size: 20px; font-family: Cabin; font-weight: 400; word-wrap: break-word; width: 100%;">
+            combinations of material
+        </div>
+        <img src="assets/space-terrace/space_terrace_14.png" width="100%" height="234px"/>
+        <img src="assets/space-terrace/space_terrace_13.png" width="100%" height="322px"/>
+        <img src="assets/space-terrace/space_terrace_15.png" />
+        <div style="display: flex; width: 100%;">
+            <img style="margin-right: 21px;" width="141px" height="267px"
+                src="assets/space-terrace/space_terrace_16.png" />
+            <div style="display: flex; flex-direction: column-reverse;">
+                <img style="margin-right: 35px;" width="176px" height="212px"
+                    src="assets/space-terrace/space_terrace_17.png" />
+            </div>
+        </div>
+        <div style="width: 100%; margin-top: 21px;">
+            <div
+                style="width: 206px; height: 80px; color: #A09B9F; font-size: 15px; font-family: Roboto; font-weight: 700; word-wrap: break-word">
+                First award at biennale of croatian design for student work at industrial design</div>
+            <div
+                style="width: 206px; color: #A09B9F; font-size: 15px; font-family: Roboto; font-weight: 700; word-wrap: break-word">
+                The work was exhibited at Zagreb design week 2022. amongst finalists in the category of
+                industrial design
+            </div>
+        </div>
+        <footer style="margin-top: 75px; width: 100%; height: 36px; color: black; font-size: 32px; font-family: Cabin; font-weight: 700; word-wrap: break-word" >
+            <a style="text-decoration: none; color: black;" href="index.html">home</a>
+        </footer>
+    </main>
+
+
 </body>
 
 </html>
