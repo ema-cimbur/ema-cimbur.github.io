@@ -71,13 +71,65 @@
         a {
             text-decoration: none;
         }
+
+        #desktop-content {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        #mobile-content {
+            display: none;
+        }
+
+        @media only screen and (max-width: 600px) {
+            #desktop-content {
+                display: none;
+            }
+
+            #mobile-content {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin: 0;
+                padding: 11px 30px 30px 30px;
+            }
+
+            .text {
+                color: #000;
+                font-family: Roboto;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .materials {
+                color: #000;
+                font-family: Cabin;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .other-text {
+                color: #A09B9F;
+                font-family: Roboto;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+        }
     </style>
 </head>
 
 <body style="margin: 0; width: 100%;">
     <header style="height: 40px; width: 100%; background-color: #00ADBB;">
     </header>
-    <main style="display: flex; justify-content: center; align-content: center;">
+    <main id="desktop-content">
         <div style="display: block;">
             <div style="display: flex; width: 60%;">
                 <div id="left" style="flex: 1; display: block;">
@@ -123,7 +175,9 @@
                     <div
                         style="border-radius: 15px; background: #00ABBC; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); width: 159px; height: 52px; margin: 25px 0 0 30px;">
                         <div class="button-text" style="padding: 16px 0 16px 0;">
-                            <a style="text-decoration: none; color: white" href="https://drive.google.com/file/d/1u_MJdfwOXOWuiu94N7Sga2DLShbAufro/view">explore brochure</a>
+                            <a style="text-decoration: none; color: white"
+                                href="https://drive.google.com/file/d/1u_MJdfwOXOWuiu94N7Sga2DLShbAufro/view">explore
+                                brochure</a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +209,11 @@
                     <img src="assets/neverlost/neverlost_3_3.png" />
                 </div>
                 <div style="display: flex; gap: 45px; margin-top: 116px;">
-                    <iframe id="youtubePlayer" width="735px" height="414px"  src="https://www.youtube.com/embed/o5ErHl2tlik?si=qqTt5IUv2F87PcYM" title="Neverlost" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe id="youtubePlayer" width="735px" height="414px"
+                        src="https://www.youtube.com/embed/o5ErHl2tlik?si=qqTt5IUv2F87PcYM" title="Neverlost"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
                     <div class="text"
                         style="width: 310px; display: flex; flex-direction: column; justify-content: flex-end;">
                         <div>
@@ -185,9 +243,14 @@
                             Design school annual award 2023.
                         </div>
                     </div>
-                    <div style="margin-left: 174px; width: 387px; display: flex; flex-direction: column; justify-content: flex-end; gap: 10px;" class="other-text">
-                        <div> <a style="color: #A09B9F" href="https://zagrebdesignweek.com/en/page-a/neverlost">https://zagrebdesignweek.com/en/page-a/neverlost</a> </div>
-                        <div> <a style="color: #A09B9F" href="https://www.studijdizajna.com/content/nagrade-i-priznanja-studija-dizajna-202223">https://www.studijdizajna.com/content/nagrade-i-priznanja-studija-dizajna-202223</a> </div>
+                    <div style="margin-left: 174px; width: 387px; display: flex; flex-direction: column; justify-content: flex-end; gap: 10px;"
+                        class="other-text">
+                        <div> <a style="color: #A09B9F"
+                                href="https://zagrebdesignweek.com/en/page-a/neverlost">https://zagrebdesignweek.com/en/page-a/neverlost</a>
+                        </div>
+                        <div> <a style="color: #A09B9F"
+                                href="https://www.studijdizajna.com/content/nagrade-i-priznanja-studija-dizajna-202223">https://www.studijdizajna.com/content/nagrade-i-priznanja-studija-dizajna-202223</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -198,6 +261,123 @@
                 </div>
             </footer>
         </div>
+    </main>
+
+    <main id="mobile-content">
+        <div
+            style="color: #000; font-family: Ebson; font-size: 40px; font-style: normal; font-weight: 400; line-height: normal;">
+            <div>Neverlost</div>
+        </div>
+        <div class="subtitle" style="height: 92px; width: 100%; margin-top: 27px;">
+            <div style="margin-bottom: 10px;">Mentors: Andrea Hercog, Nina Pavlinek</div>
+            <div style="margin-bottom: 10px;">Collaborators: Jasmina Isaković,</div>
+            <div style="margin-bottom: 10px;">Goran Ferčec</div>
+            <div style="margin-bottom: 10px;">Industrial design 2</div>
+            2023.
+        </div>
+        <img src="assets/neverlost/neverlost_logo.png" width="124px" height="183px" style="margin-right: -200px;" />
+        <div class="text" style="margin: 27px 0 25px 0;">
+            Have you ever been lost in the city? The feeling of fear, anxiety, and uncertainty as you wander
+            without a sense of direction. The maps on your phone don’t seem to cooperate, and you feel
+            somewhat awkward as you keep going in circles, trying to find your way. The speculative service
+            NeverLost utilizes magnetic pathways to provide people with intuitive orientation, inspired by
+            the natural sense of magnetoreception found in animals.
+        </div>
+        <div class="text" style="margin-bottom: 25px;">
+            The project is portrayed with a satirical approach through the use of a commercial brand and
+            promotional materials such as brochures generated by artificial intelligence. Newspaper articles
+            from a potential future and devastated promotional posters create a juxtaposition between the
+            marketing approach and the actual implications of the technology.
+
+        </div>
+        <div class="text" style="margin-bottom: 25px;">
+            The project prompts contemplation on the ethical and philosophical implications of technological
+            advancement. One of the key aspects of the research is the question of what happens when
+            technology becomes directly connected to the human body, in this case through a chip in the
+            motor cortex. When our movement is made so effortless that we no longer have to think about
+            where we’re going, our navigation becomes purely pragmatic. However, this raises the question:
+            do we lose the poetics and humanity of getting lost? Is it humane to integrate technology into
+            our bodies, even if its purpose is to make our lives easier?
+        </div>
+        <img src="assets/neverlost/neverlost_1.png" width="100%" />
+        <div style="width: 100%; display: flex; flex-direction: row-reverse;">
+            <img src="assets/neverlost/zgdw.png" width="92px" height="42px" style="margin: -15px 16px 0 0;" />
+        </div>
+        <div style="width: 100%;">
+            <div
+                style="border-radius: 15px; background: #00ABBC; box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); width: 159px; height: 52px;">
+                <div class="button-text" style="padding: 16px 0 16px 0;">
+                    <a style="text-decoration: none; color: white"
+                        href="https://drive.google.com/file/d/1u_MJdfwOXOWuiu94N7Sga2DLShbAufro/view">explore
+                        brochure</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; margin-top: 32px; gap: 8px; width: 100%;">
+            <img src="assets/neverlost/neverlost_2_1.png" width="100%" height="105px" style="flex: 1" />
+            <img src="assets/neverlost/neverlost_2_2.png" width="100%" height="105px" style="flex: 1" />
+        </div>
+        <div style="display: flex; margin-top: 16px; gap: 7px; width: 100%;">
+            <img src="assets/neverlost/neverlost_2_3.png" width="100%" height="111px" style="flex: 1" />
+            <img src="assets/neverlost/neverlost_2_4.png" width="100%" height="111px" style="flex: 1" />
+        </div>
+        <div class="text" style="width: 100%; margin: 16px 0 15px 0;">
+            Newspaper articles and destroyed posters from potential future show the possible downsides
+            of
+            the introduced technology: like hacking, addiction and protest against technology.
+        </div>
+        <div style="width: 100%; margin-left: 30px;">
+            <img src="assets/neverlost/neverlost_3_1.png" width="198px" height="110px" />
+            <div style="display: flex; flex-direction: row-reverse;">
+                <img src="assets/neverlost/neverlost_3_2.png" width="198px" height="110px"
+                    style="margin-top: 16px;  margin-right: 36px;" />
+            </div>
+            <img src="assets/neverlost/neverlost_3_3.png" width="198px" height="110px" style="margin-top: 16px;" />
+        </div>
+        <div class="text" style="width: 100%; margin: 16px 0 16px 0;">
+            <div>
+                The video portrays a real-time commercial for Neverlost being hacked, displaying glimpses of
+                a
+                potential future where individuals using the chip-enabled Neverlost technology are
+                documented.
+                These clips reveal a disturbing and uncanny side to the use of this technology, showcasing
+                glitches and unsettling aspects of its integration with the human body. The hacked
+                commercial
+                offers a haunting glimpse into the possible repercussions and darker aspects of relying on
+                such
+                advanced technological enhancements.
+            </div>
+        </div>
+        <iframe id="youtubePlayer" width="100%px" height="200px"
+            src="https://www.youtube.com/embed/o5ErHl2tlik?si=qqTt5IUv2F87PcYM" title="Neverlost" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+        <div style="display: flex; gap: 14px; margin-top: 56px;">
+            <img src="assets/neverlost/neverlost_exhibition.png" width="193px" height="159px" />
+            <div style="display: block;" class="other-text">
+                <div>
+                    The work was exhibited at Zagreb design week 2023. amongst finalists in the category of
+                    design of social inovations
+                </div>
+                <div style="margin-top: 15px;">
+                    Design school annual award 2023.
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%; margin-top: 20px;"
+            class="other-text">
+            <div style="margin-bottom: 15px;"> <a style="color: #A09B9F"
+                    href="https://zagrebdesignweek.com/en/page-a/neverlost">https://zagrebdesignweek.com/en/page-a/neverlost</a>
+            </div>
+            <div> <a style="color: #A09B9F"
+                    href="https://www.studijdizajna.com/content/nagrade-i-priznanja-studija-dizajna-202223">https://www.studijdizajna.com/content/nagrade-i-priznanja-studija-dizajna-202223</a>
+            </div>
+        </div>
+        <footer
+            style="margin-top: 75px; width: 100%; height: 36px; color: black; font-size: 32px; font-family: Cabin; font-weight: 700; word-wrap: break-word">
+            <a style="text-decoration: none; color: black;" href="index.html">home</a>
+        </footer>
     </main>
 </body>
 
